@@ -3,6 +3,7 @@ import os
 from dotenv import load_dotenv
 from setting import setting_page
 from news_summarizer import news_summarizer_page
+from url_summarizer import url_summarizer_page
 
 load_dotenv()
 
@@ -18,11 +19,13 @@ if "api_key" not in st.session_state:
 st.sidebar.title("Navigation")
 menu = st.sidebar.radio(
     "Choose a page:",
-    ["News Summarizer", "Settings"],
+    ["News Summarizer","URL Summarizer" "Settings"],
     index=0,
 )
 
 if menu == "News Summarizer":
     news_summarizer_page()
+elif menu == "URL Summarizer":
+    url_summarizer_page()
 elif menu == "Settings":
     setting_page()

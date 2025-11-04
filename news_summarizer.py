@@ -6,7 +6,6 @@ from langchain_core.prompts import ChatPromptTemplate
 from langchain_core.runnables import RunnablePassthrough
 import os
 
-
 def news_summarizer_page():
     """News Summarizer Page"""
     st.title("News Summarizer")
