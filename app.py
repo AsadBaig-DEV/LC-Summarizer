@@ -9,7 +9,7 @@ load_dotenv()
 st.set_page_config(page_title="LangChain Summarizer", layout="wide")
 
 if "api_key" not in st.session_state:
-    st.session_state.api_key = os.getenv("OPENAI_API_KEY")
+    st.session_state.openai_api_key = os.getenv("OPENAI_API_KEY")
     st.session_state.serper_api_key = os.getenv("SERPER_API_KEY")
     st.session_state.num_results = 5
 
