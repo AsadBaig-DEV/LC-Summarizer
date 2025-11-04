@@ -19,7 +19,7 @@ if "api_key" not in st.session_state:
 st.sidebar.title("Navigation")
 menu = st.sidebar.radio(
     "Choose a page:",
-    ["News Summarizer","URL Summarizer" "Settings"],
+    ["News Summarizer","URL Summarizer", "Settings"],
     index=0,
 )
 
